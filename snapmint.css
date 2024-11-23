@@ -41,6 +41,8 @@
 #one{
     margin-left: 20%;
 }
+
+
 .wallet{
     display: flex;
     flex-direction: row;
@@ -350,3 +352,170 @@ margin-bottom: 3%;
     width: 120px;
     margin-top: 10px;
   }
+
+  /* Media Query for Small Devices (Mobile Phones) */
+@media (max-width: 767px) {
+
+  .nav a {
+      font-size: 16px;
+      padding: 0.5%;
+  }
+
+  .nav input {
+      width: 70%; 
+      margin-top: 0.5%;
+  }
+
+  /* Adjust the Wallet Section */
+  .wallet {
+      flex-direction: column; 
+      font-size: 14px;
+      padding: 2%;
+  }
+
+  /* Section 1 adjustments */
+  .sec1 {
+      flex-direction: column; 
+      height: auto;
+      text-align: center;
+  }
+
+  .img2 {
+      width: 100%; /* Make the image take full width */
+      margin-left: 0;
+  }
+
+  .two p {
+      font-size: 25px; 
+      padding: 10%;
+      margin-top: 20%;
+  }
+
+  .three {
+      font-size: 28px; 
+      padding: 2%;
+      margin-top: 5%;
+  }
+
+  /* Section 2 adjustments */
+  .sec2 {
+      flex-direction: column; 
+      padding-left: 0;
+  }
+
+  .diva, .diva2, .diva3 {
+      width: 90%; 
+      margin-right: 0;
+      margin-bottom: 2%;
+  }
+
+  /* Adjust the Cards in Section 3 */
+  .diva4 {
+      flex-direction: column; 
+      justify-content: center;
+  }
+
+  .card, .card2 {
+      width: 100%; 
+      margin-right: 0;
+  }
+
+  .categories {
+      flex-direction: column; 
+      margin-left: 0;
+  }
+
+  .category {
+      flex: 1 1 100%; 
+  }
+
+  footer {
+      flex-direction: column; 
+      padding: 10px;
+  }
+
+  footer .info, footer .links, footer .support, footer .download {
+      flex: 1 1 100%; 
+  }
+
+}
+
+/* Media Query for Medium Devices (Tablets) */
+@media (max-width: 1024px) and (min-width: 768px){
+
+  
+  .nav a {
+      font-size: 18px; /* Adjust font size for tablet */
+      padding: 0.8%;
+  }
+
+  .nav input {
+      width: 50%; 
+  }
+
+  /* Adjust the Wallet Section */
+  .wallet {
+      font-size: 16px;
+      flex-direction: row; 
+      justify-content: space-around;
+  }
+
+  /* Section 1 adjustments */
+  .sec1 {
+      flex-direction: row; 
+  }
+
+  .img2 {
+      width: 45%; 
+      margin-left: 5%;
+  }
+
+  .two p {
+      font-size: 30px; 
+      padding: 15%;
+  }
+
+  .three {
+      font-size: 32px; 
+
+  /* Section 2 adjustments */
+  .sec2 {
+      flex-direction: row; /* Keep items in row for tablets */
+  }
+
+  .diva, .diva2, .diva3 {
+      width: 30%; 
+  }
+
+  /* Cards Layout */
+  .diva4 {
+      flex-direction: row; 
+  }
+
+  .card, .card2 {
+      width: 48%; 
+      margin-right: 2%;
+  }
+
+  /* Categories */
+  .categories {
+      flex-direction: row; 
+      
+      flex-wrap: wrap;
+  }
+
+  .category {
+      flex: 1 1 45%; 
+      
+  }
+
+  /* Footer adjustments */
+  footer {
+      flex-direction: row; /* Keep footer sections in row */
+  }
+
+  footer .info, footer .links, footer .support, footer .download {
+      flex: 1 1 22%; /* Keep footer items side by side */
+  }
+}
+}
